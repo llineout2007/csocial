@@ -1,0 +1,278 @@
+/* Estilos para o Site CNH Social - Tema Clean, Moderno e Mobile First */
+
+/* Importação de Fonte Moderna e Legível */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300,400,600,700,900&display=swap');
+
+:root {
+    /* Cores Clean e Modernas, mantendo a referência governamental sutil */
+    --cor-primaria: #004a80; /* Azul Marinho (Profissionalismo) */
+    --cor-secundaria: #009c3b; /* Verde (Ação/Sucesso) */
+    --cor-destaque: #ffc107; /* Amarelo (Alerta/Destaque) */
+    --cor-fundo: #f8f9fa; /* Branco Off-White (Clean) */
+    --cor-texto: #343a40; /* Cinza Escuro */
+    --cor-fundo-header: #ffffff;
+    --cor-fundo-cta: #e9ecef; /* Cinza Claro para seções */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    min-height: 100vh;
+}
+
+.container {
+    width: 95%; /* Mais largura para mobile */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header - Clean e Focado */
+header {
+    background-color: var(--cor-fundo-header);
+    border-bottom: 3px solid var(--cor-primaria);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+    padding: 15px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: var(--cor-secundaria);
+}
+
+nav {
+    display: none; /* Escondendo navegação em mobile para um design mais clean */
+}
+
+/* Seções Gerais */
+section {
+    padding: 40px 0;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.8em;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--cor-secundaria);
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Seção Hero - Destaque para Conversão */
+#hero {
+    background-color: var(--cor-fundo-cta);
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 5px solid var(--cor-destaque);
+    background-image: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+/* Destaque da Taxa - O Ponto Chave da Conversão */
+.taxa-destaque {
+    background-color: var(--cor-destaque);
+    color: var(--cor-primaria);
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 6px;
+    font-size: 1.4em;
+    font-weight: 900;
+    border: 2px solid var(--cor-primaria);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.01); } /* Animação mais sutil */
+    100% { transform: scale(1); }
+}
+
+/* Botão de Call-to-Action Principal */
+.btn-cta {
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 156, 59, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-cta:hover {
+    background-color: #007d2f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 156, 59, 0.6);
+}
+
+/* Formulário de Inscrição - Clean */
+#inscricao {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--cor-primaria);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--cor-texto);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group select,
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da; /* Borda mais clara */
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--cor-secundaria);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 156, 59, 0.25); /* Foco sutil */
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 74, 128, 0.3);
+}
+
+.btn-submit:hover {
+    background-color: #003a60;
+    box-shadow: 0 4px 8px rgba(0, 74, 128, 0.4);
+}
+
+/* Rodapé - Clean */
+footer {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.85em;
+    margin-top: 15px;
+}
+
+footer a {
+    color: var(--cor-destaque);
+    text-decoration: none;
+}
+
+/* Mobile First - Ajustes para telas maiores */
+@media (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header-content {
+        display: flex;
+    }
+
+    nav {
+        display: block;
+    }
+
+    #hero h1 {
+        font-size: 3em;
+    }
+
+    .taxa-destaque {
+        font-size: 1.6em;
+    }
+
+    .btn-cta {
+        font-size: 1.6em;
+        padding: 18px 40px;
+    }
+
+    /* Layout de 2 colunas para requisitos e passo a passo em desktop */
+    .flex-section {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .flex-section > div {
+        width: 48%;
+    }
+
+    #inscricao {
+        padding: 50px;
+    }
+}
