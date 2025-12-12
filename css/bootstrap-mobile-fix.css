@@ -1,0 +1,184 @@
+/* ========================================
+   BOOTSTRAP MOBILE FIX - CORRECAO DE RESPONSIVIDADE (FINAL)
+   ======================================== */
+
+/* Forcar o comportamento de 100% de largura em telas pequenas */
+@media (max-width: 991px) {
+    /* Containers */
+    .container,
+    .container-lg,
+    .container-fluid {
+        max-width: 100% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* Linhas e Colunas */
+    .row {
+        display: flex !important; /* Mudar para flex para permitir duas colunas no mobile */
+        flex-wrap: wrap !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    [class*="col-"] {
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* ========== HEADER MOBILE ========== */
+    .rnk-comp-header {
+        padding: 8px 0 !important;
+    }
+
+    /* Logo visivel no mobile */
+    .rnk-comp-header-logo {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: auto !important;
+    }
+
+    .rnk-comp-header-logo img {
+        max-width: 100px !important;
+        height: auto !important;
+    }
+
+    /* Campo de busca removido no mobile */
+    .rnk-comp-header-busca {
+        display: none !important;
+    }
+
+    /* Icones de navegacao menores */
+    .nav-link {
+        min-height: 40px !important;
+        min-width: 40px !important;
+        padding: 5px !important;
+        font-size: 11px !important;
+    }
+
+    /* ========== IMAGEM DO PRODUTO (NOVO LAYOUT) ========== */
+    .desktop-image {
+        display: none !important;
+    }
+    .mobile-image {
+        display: block !important;
+    }
+    .rnk-comp-produto-imagem {
+        width: 30% !important; /* Imagem menor */
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+        max-height: 150px !important;
+        overflow: hidden !important;
+        order: 1 !important; /* Ordem para aparecer primeiro */
+    }
+
+    .rnk-comp-produto-imagem img {
+        max-width: 100% !important;
+        height: auto !important;
+        max-height: 150px !important;
+        object-fit: contain !important;
+    }
+
+    /* ========== INFORMACOES DO PRODUTO (NOVO LAYOUT) ========== */
+    .rnk-comp-produto-info {
+        width: 70% !important; /* Descrição ao lado da imagem */
+        padding: 0 10px !important;
+        margin-bottom: 0 !important;
+        order: 2 !important;
+    }
+
+    .rnk-comp-produto-info h1,
+    .rnk-comp-produto-info h2,
+    .rnk-comp-produto-info h3 {
+        font-size: 16px !important; /* Fonte menor para caber */
+        margin-bottom: 5px !important;
+        line-height: 1.3 !important;
+    }
+
+    /* Preço e Botão Comprar em uma linha separada */
+    .rnk-row-seller-e-comprar {
+        width: 100% !important;
+        order: 3 !important;
+        display: block !important;
+    }
+
+    /* ========== BOTAO COMPRAR (REVERTIDO) ========== */
+    .rnk-container-comprar-produto {
+        width: 100% !important;
+        margin: 10px 0 !important;
+        padding: 0 !important;
+    }
+
+    .rnk-container-comprar-produto a,
+    .rnk-container-comprar-produto button,
+    .buy-button {
+        width: 100% !important;
+        min-height: 45px !important; /* Um pouco maior que o padrão */
+        font-size: 18px !important; /* Aumentando apenas a fonte */
+        font-weight: bold !important;
+        padding: 10px 20px !important;
+        /* Revertendo cores para o original do site */
+        background-color: initial !important;
+        color: initial !important;
+        border: initial !important;
+        /* Garantindo que o texto do botão seja visível */
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-decoration: none !important;
+    }
+
+    /* Remover espaco em branco após o comprar */
+    .rnk-comp-produto {
+        margin-bottom: 0 !important;
+        padding-bottom: 20px !important;
+    }
+}
+
+/* Ocultar botão Menu no Desktop */
+@media (min-width: 992px) {
+    .rnk-btn-menu {
+        display: none !important;
+    }
+}
+
+/* Garantir que o botão Menu apareça no Mobile */
+@media (max-width: 991px) {
+    .rnk-btn-menu {
+        display: flex !important; /* Ou block, dependendo do elemento */
+    }
+}
+
+/* Reverter para desktop */
+@media (min-width: 992px) {
+    .desktop-image {
+        display: block !important;
+    }
+    .mobile-image {
+        display: none !important;
+    }
+@media (min-width: 992px) {
+    .row {
+        display: flex !important;
+    }
+    .rnk-comp-produto-imagem {
+        width: 40% !important;
+        max-height: none !important;
+        order: initial !important;
+    }
+    .rnk-comp-produto-info {
+        width: 60% !important;
+        order: initial !important;
+    }
+    .rnk-comp-header-busca {
+        display: flex !important;
+    }
+    .rnk-row-seller-e-comprar {
+        order: initial !important;
+        display: flex !important;
+    }
+}
