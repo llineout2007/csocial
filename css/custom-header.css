@@ -1,0 +1,47 @@
+/* Estilos para a faixa preta superior */
+.rnk-top-bar {
+    background-color: #000; /* Preto */
+    color: #fff; /* Texto branco */
+    height: 30px; /* Altura aproximada da faixa */
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 0 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+.rnk-top-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ajuste para o cabeçalho principal ficar abaixo da nova faixa */
+.rnk-header {
+    margin-top: 30px; /* Altura da faixa preta */
+}
+
+/* Estilo para a faixa preta do site de referência (se for o caso) */
+.rnk-comp-barra-fixa {
+    background-color: #000;
+    color: #fff;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 0 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+.rnk-comp-barra-fixa a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ocultar a barra fixa original se ela existir e for indesejada */
+.rnk-comp-barra-fixa:not(.rnk-top-bar) {
+    display: none !important;
+}
