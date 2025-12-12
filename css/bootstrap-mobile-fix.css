@@ -1,0 +1,85 @@
+/* ========================================
+   BOOTSTRAP MOBILE FIX - CORREÇÃO DE RESPONSIVIDADE
+   ======================================== */
+
+/* Forçar o comportamento de 100% de largura em telas pequenas */
+@media (max-width: 991px) {
+    /* Containers */
+    .container,
+    .container-lg,
+    .container-fluid {
+        max-width: 100% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* Linhas e Colunas */
+    .row {
+        display: block !important; /* Força o empilhamento vertical */
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    [class*="col-"] {
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* Elementos de Produto */
+    .rnk-comp-produto-imagem,
+    .rnk-comp-produto-info {
+        width: 100% !important;
+        padding: 0 !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Preço e Botão Comprar */
+    .rnk-comp-produto-preco {
+        font-size: 32px !important;
+        text-align: center !important;
+    }
+
+    .rnk-comp-produto-comprar a,
+    .rnk-comp-produto-comprar button {
+        width: 100% !important;
+        min-height: 50px !important;
+        font-size: 16px !important;
+    }
+
+    /* Header e Navegação */
+    .rnk-comp-header {
+        padding: 10px 0 !important;
+    }
+
+    .rnk-comp-header-busca {
+        width: 100% !important;
+        margin: 10px 0 !important;
+    }
+
+    .nav-link {
+        min-height: 44px !important;
+        min-width: 44px !important;
+    }
+
+    /* Imagens */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* Reverter para desktop */
+@media (min-width: 992px) {
+    .row {
+        display: flex !important;
+    }
+    .rnk-comp-produto-imagem {
+        width: 40% !important;
+    }
+    .rnk-comp-produto-info {
+        width: 60% !important;
+    }
+}
