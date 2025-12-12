@@ -1,0 +1,696 @@
+/* ========================================
+   MOBILE FIRST RESPONSIVE STYLES - FORCE VERSION
+   Drogaria São Paulo - Página de Produto
+   COM !important PARA SOBRESCREVER ESTILOS EXISTENTES
+   ======================================== */
+
+/* ========================================
+   BASE STYLES - MOBILE (< 576px)
+   Estilos padrão para dispositivos móveis
+   ======================================== */
+
+* {
+    box-sizing: border-box !important;
+}
+
+html {
+    font-size: 16px !important;
+    -webkit-text-size-adjust: 100% !important;
+}
+
+body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Container responsivo */
+.container,
+.container-lg,
+.container-fluid {
+    width: 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Header - Mobile */
+.rnk-comp-header {
+    padding: 10px 0 !important;
+    width: 100% !important;
+}
+
+.rnk-comp-header .row {
+    margin: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+}
+
+.rnk-comp-header .col-auto,
+.rnk-comp-header .col,
+.rnk-comp-header [class*="col-"] {
+    padding: 5px !important;
+    flex: 0 0 auto !important;
+}
+
+/* Logo - Mobile */
+.rnk-comp-header-logo img {
+    max-width: 120px !important;
+    height: auto !important;
+    width: 100% !important;
+}
+
+/* Busca - Mobile */
+.rnk-comp-header-busca {
+    width: 100% !important;
+    margin: 10px 0 !important;
+    display: flex !important;
+    gap: 5px !important;
+}
+
+.rnk-comp-header-busca input[type="text"] {
+    font-size: 14px !important;
+    padding: 10px 12px !important;
+    width: 100% !important;
+    min-height: 44px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+}
+
+.rnk-comp-header-busca button {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    padding: 10px 15px !important;
+    flex-shrink: 0 !important;
+}
+
+/* Navegação - Mobile */
+.nav,
+.nav-item {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 5px !important;
+}
+
+.nav-link {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px !important;
+    font-size: 12px !important;
+}
+
+/* Botão Menu - Mobile */
+.rnk-btn-menu {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    padding: 10px 15px !important;
+    font-size: 14px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Badges - Mobile */
+.badge {
+    min-width: 18px !important;
+    min-height: 18px !important;
+    font-size: 11px !important;
+    padding: 2px 5px !important;
+}
+
+/* Produto - Mobile */
+.rnk-comp-produto {
+    padding: 15px 0 !important;
+    width: 100% !important;
+}
+
+.rnk-comp-produto .row {
+    margin: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+}
+
+/* Imagem do Produto - Mobile */
+.rnk-comp-produto-imagem,
+.rnk-comp-produto-imagem-container {
+    width: 100% !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+.rnk-comp-produto-imagem img,
+.rnk-comp-produto-imagem-container img {
+    max-width: 100% !important;
+    height: auto !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+/* Informações do Produto - Mobile */
+.rnk-comp-produto-info,
+.rnk-comp-produto-info-container {
+    width: 100% !important;
+    padding: 0 15px !important;
+}
+
+.rnk-comp-produto-info h1,
+.rnk-comp-produto-info h2,
+.rnk-comp-produto-info h3,
+.rnk-comp-produto-info-container h1,
+.rnk-comp-produto-info-container h2,
+.rnk-comp-produto-info-container h3 {
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 15px !important;
+    margin-top: 0 !important;
+}
+
+.rnk-comp-produto-info p,
+.rnk-comp-produto-info-container p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 10px !important;
+}
+
+/* SKU - Mobile */
+.rnk-comp-produto-sku {
+    font-size: 12px !important;
+    color: #666 !important;
+    margin-bottom: 10px !important;
+}
+
+/* Preço - Mobile */
+.rnk-comp-produto-preco {
+    font-size: 32px !important;
+    font-weight: bold !important;
+    color: #000 !important;
+    margin: 20px 0 !important;
+    display: block !important;
+}
+
+/* Quantidade - Mobile */
+.rnk-comp-produto-quantidade {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin: 15px 0 !important;
+}
+
+.rnk-comp-produto-quantidade input {
+    width: 60px !important;
+    height: 44px !important;
+    text-align: center !important;
+    font-size: 16px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    padding: 5px !important;
+}
+
+.rnk-comp-produto-quantidade button {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    padding: 10px !important;
+}
+
+/* Botão Comprar - Mobile */
+.rnk-comp-produto-comprar,
+.rnk-comp-produto-comprar-container {
+    width: 100% !important;
+    margin: 15px 0 !important;
+}
+
+.rnk-comp-produto-comprar a,
+.rnk-comp-produto-comprar button,
+.rnk-comp-produto-comprar-container a,
+.rnk-comp-produto-comprar-container button {
+    width: 100% !important;
+    min-height: 50px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    padding: 12px 20px !important;
+    border-radius: 4px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Menu Dropdown - Mobile */
+.rnk-dropdown-body {
+    width: 100% !important;
+    max-height: 80vh !important;
+    overflow-y: auto !important;
+}
+
+.rnk-comp-menu-lista-departamentos li {
+    margin-bottom: 10px !important;
+}
+
+.rnk-comp-menu-lista-departamentos a {
+    font-size: 14px !important;
+    padding: 10px !important;
+    display: block !important;
+    min-height: 44px !important;
+}
+
+/* Banners - Mobile */
+.rnk-container-menu-banner-promocional img,
+.rnk-container-menu-banner-lateral img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Stories/Marcas - Mobile */
+.rnk-comp-stories ul {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    justify-content: center !important;
+}
+
+.rnk-comp-stories li {
+    flex: 0 0 auto !important;
+}
+
+.rnk-story-ball {
+    display: block !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+}
+
+.rnk-story-ball img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Offcanvas - Mobile */
+.offcanvas {
+    max-width: 100% !important;
+}
+
+.offcanvas-body {
+    padding: 15px !important;
+}
+
+/* Tabelas - Mobile */
+table {
+    width: 100% !important;
+    overflow-x: auto !important;
+    display: block !important;
+}
+
+/* Imagens responsivas gerais */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* Links e botões - área de toque */
+a,
+button,
+input[type="button"],
+input[type="submit"] {
+    touch-action: manipulation !important;
+}
+
+/* ========================================
+   TABLET - SM (≥ 576px)
+   ======================================== */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px !important;
+    }
+
+    .rnk-comp-header-logo img {
+        max-width: 150px !important;
+    }
+
+    .rnk-comp-produto-info h1,
+    .rnk-comp-produto-info h2,
+    .rnk-comp-produto-info h3 {
+        font-size: 24px !important;
+    }
+
+    .rnk-comp-produto-preco {
+        font-size: 36px !important;
+    }
+
+    .rnk-comp-menu-lista-departamentos a {
+        font-size: 15px !important;
+    }
+}
+
+/* ========================================
+   TABLET - MD (≥ 768px)
+   ======================================== */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px !important;
+    }
+
+    .rnk-comp-header-logo img {
+        max-width: 180px !important;
+    }
+
+    .rnk-comp-header-busca input[type="text"] {
+        font-size: 15px !important;
+    }
+
+    /* Produto em duas colunas */
+    .rnk-comp-produto .row {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+
+    .rnk-comp-produto-imagem,
+    .rnk-comp-produto-imagem-container {
+        width: 50% !important;
+        padding-right: 20px !important;
+    }
+
+    .rnk-comp-produto-info,
+    .rnk-comp-produto-info-container {
+        width: 50% !important;
+    }
+
+    .rnk-comp-produto-info h1,
+    .rnk-comp-produto-info h2,
+    .rnk-comp-produto-info h3 {
+        font-size: 26px !important;
+    }
+
+    .rnk-comp-produto-preco {
+        font-size: 40px !important;
+    }
+
+    /* Botão comprar não precisa ser 100% */
+    .rnk-comp-produto-comprar a,
+    .rnk-comp-produto-comprar button {
+        width: auto !important;
+        min-width: 200px !important;
+    }
+}
+
+/* ========================================
+   DESKTOP - LG (≥ 992px)
+   ======================================== */
+@media (min-width: 992px) {
+    .container,
+    .container-lg {
+        max-width: 960px !important;
+    }
+
+    html {
+        font-size: 16px !important;
+    }
+
+    .rnk-comp-header {
+        padding: 15px 0 !important;
+    }
+
+    .rnk-comp-header-logo img {
+        max-width: 200px !important;
+    }
+
+    .rnk-comp-header-busca input[type="text"] {
+        font-size: 16px !important;
+        padding: 12px 15px !important;
+    }
+
+    /* Navegação horizontal no desktop */
+    .nav {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 15px !important;
+    }
+
+    /* Produto - layout desktop */
+    .rnk-comp-produto-imagem,
+    .rnk-comp-produto-imagem-container {
+        width: 40% !important;
+    }
+
+    .rnk-comp-produto-info,
+    .rnk-comp-produto-info-container {
+        width: 60% !important;
+        padding-left: 30px !important;
+    }
+
+    .rnk-comp-produto-info h1,
+    .rnk-comp-produto-info h2,
+    .rnk-comp-produto-info h3 {
+        font-size: 28px !important;
+    }
+
+    .rnk-comp-produto-info p {
+        font-size: 15px !important;
+    }
+
+    .rnk-comp-produto-preco {
+        font-size: 44px !important;
+    }
+
+    /* Menu dropdown - desktop */
+    .rnk-dropdown-body {
+        width: auto !important;
+        min-width: 600px !important;
+    }
+
+    .rnk-comp-menu-lista-departamentos a {
+        font-size: 16px !important;
+    }
+
+    /* Offcanvas vira dropdown no desktop */
+    .offcanvas {
+        max-width: 80% !important;
+    }
+}
+
+/* ========================================
+   DESKTOP LARGE - XL (≥ 1200px)
+   ======================================== */
+@media (min-width: 1200px) {
+    .container,
+    .container-lg {
+        max-width: 1140px !important;
+    }
+
+    .rnk-comp-header-logo img {
+        max-width: 220px !important;
+    }
+
+    .rnk-comp-produto-info h1,
+    .rnk-comp-produto-info h2,
+    .rnk-comp-produto-info h3 {
+        font-size: 30px !important;
+    }
+
+    .rnk-comp-produto-preco {
+        font-size: 48px !important;
+    }
+
+    .rnk-dropdown-body {
+        min-width: 800px !important;
+    }
+}
+
+/* ========================================
+   DESKTOP EXTRA LARGE - XXL (≥ 1400px)
+   ======================================== */
+@media (min-width: 1400px) {
+    .container,
+    .container-lg {
+        max-width: 1320px !important;
+    }
+
+    .rnk-comp-header {
+        padding: 20px 0 !important;
+    }
+
+    .rnk-comp-produto-info h1,
+    .rnk-comp-produto-info h2,
+    .rnk-comp-produto-info h3 {
+        font-size: 32px !important;
+    }
+
+    .rnk-comp-produto-preco {
+        font-size: 52px !important;
+    }
+}
+
+/* ========================================
+   UTILITIES - RESPONSIVO
+   ======================================== */
+
+/* Esconder/Mostrar por breakpoint */
+.mobile-only {
+    display: block !important;
+}
+
+.desktop-only {
+    display: none !important;
+}
+
+@media (min-width: 992px) {
+    .mobile-only {
+        display: none !important;
+    }
+    
+    .desktop-only {
+        display: block !important;
+    }
+}
+
+/* Espaçamentos responsivos */
+.p-responsive {
+    padding: 15px !important;
+}
+
+@media (min-width: 768px) {
+    .p-responsive {
+        padding: 20px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .p-responsive {
+        padding: 30px !important;
+    }
+}
+
+/* Texto responsivo */
+.text-responsive {
+    font-size: 14px !important;
+}
+
+@media (min-width: 768px) {
+    .text-responsive {
+        font-size: 15px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .text-responsive {
+        font-size: 16px !important;
+    }
+}
+
+/* ========================================
+   ACESSIBILIDADE E PERFORMANCE
+   ======================================== */
+
+/* Reduzir movimento para usuários que preferem */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Otimização de fonte para telas de alta densidade */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+    }
+}
+
+/* ========================================
+   FIX PARA ELEMENTOS ESPECÍFICOS DO SITE
+   ======================================== */
+
+/* Ajustar faixa preta superior */
+.rnk-top-bar,
+.rnk-comp-barra-fixa {
+    font-size: 11px !important;
+    padding: 5px 10px !important;
+    height: auto !important;
+    min-height: 30px !important;
+    width: 100% !important;
+}
+
+@media (min-width: 768px) {
+    .rnk-top-bar,
+    .rnk-comp-barra-fixa {
+        font-size: 12px !important;
+        padding: 0 15px !important;
+    }
+}
+
+/* Ajustar header após faixa */
+.rnk-header {
+    margin-top: 0 !important;
+}
+
+/* Garantir que imagens de marca sejam responsivas */
+.rnk-comp-stories img,
+.rnk-container-menu-principais-marcas img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Ajustar zoom de imagem do produto */
+#botaoZoom {
+    display: none !important;
+}
+
+@media (min-width: 992px) {
+    #botaoZoom {
+        display: inline-block !important;
+    }
+}
+
+/* Melhorar visualização de formulários */
+input,
+select,
+textarea {
+    font-size: 16px !important;
+}
+
+@media (min-width: 768px) {
+    input,
+    select,
+    textarea {
+        font-size: 15px !important;
+    }
+}
+
+/* Forçar display flex em elementos principais */
+.row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+[class*="col-"] {
+    flex: 0 0 auto !important;
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+@media print {
+    .rnk-comp-header,
+    .rnk-btn-menu,
+    .nav,
+    .rnk-dropdown,
+    .offcanvas {
+        display: none !important;
+    }
+    
+    .rnk-comp-produto-info {
+        width: 100% !important;
+    }
+}
